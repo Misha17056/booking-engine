@@ -40,7 +40,7 @@ public class Resource {
     private ResourceStatus status;
 
     @JdbcTypeCode(SqlTypes.JSON)
-    @Column(name="atributes", columnDefinition = "jsonb")
+    @Column(name="attributes", columnDefinition = "jsonb")
     private Map<String, Object> attributes;
 
     @ManyToOne(fetch = FetchType.LAZY)

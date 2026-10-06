@@ -30,10 +30,10 @@ public class Booking {
     private Resource resource;
 
     @Column(name = "start_time", nullable = false)
-    private Long startTime;
+    private LocalDateTime startTime;
 
     @Column(name = "end_time", nullable = false)
-    private Long endTime;
+    private LocalDateTime endTime;
 
     @Column(name = "total_price", nullable = false, precision = 10, scale = 2)
     private BigDecimal totalPrice;
